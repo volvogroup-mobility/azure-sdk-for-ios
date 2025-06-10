@@ -17,7 +17,8 @@ let package = Package(
             name: "AzureStorageBlob",
             dependencies: ["AzureCore"],
             path: "sdk/storage/AzureStorageBlob",
-            sources: ["Source"]
+            sources: ["Source"],
+            resources: [.process("Resources")]
         ),
         .testTarget(
             name: "AzureStorageBlobTests",
